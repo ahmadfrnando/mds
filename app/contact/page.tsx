@@ -1,0 +1,9 @@
+import ContactContent from "@/components/Contact/contact";
+import Layout from "@/components/Layout";
+export default function Contact() {
+    return (
+        <Layout>
+        <ContactContent />
+        </Layout>
+    );
+}
