@@ -1,5 +1,9 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-export default function ButtonCustom({ className = "bg-primary ring-primary", title, type }: any) {
+export default function ButtonCustom({
+  className = "bg-primary ring-primary",
+  title,
+  type,
+}: any) {
   return (
     <button
       type={type}

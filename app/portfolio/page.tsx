@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
-import ServiceContent from "@/components/Services/service";
+import PortfolioContent from "@/components/portfolio/portfolio";
 import CallContent from "@/components/Contact/call";
 export default function Services() {
   return (
     <Layout>
-      <ServiceContent />
+      <PortfolioContent />
       <CallContent />
     </Layout>
   );
