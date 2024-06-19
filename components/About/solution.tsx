@@ -42,7 +42,7 @@ const Solution: React.FC = () => {
 
         <div className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-400 text-gray-600 dark:divide-gray-700 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
           <div className="group relative bg-white transition hover:z-[1] hover:bg-red-300 hover:shadow-2xl hover:shadow-red-600/10 dark:bg-gray-800">
-            <div className="relative space-y-8 p-8 py-12">
+            <div className="relative space-y-8 p-8 py-12 cursor-pointer">
               <Image
                 src={stap}
                 alt="Burger illustration"
@@ -62,7 +62,7 @@ const Solution: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="group relative bg-white transition hover:z-[1] hover:bg-blue-300  hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+          <div className="group relative cursor-pointer bg-white transition hover:z-[1] hover:bg-blue-300  hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
             <div className="relative space-y-8 p-8 py-12">
               <Image
                 src={money}
@@ -83,7 +83,7 @@ const Solution: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="group relative bg-white transition hover:z-[1] hover:bg-orange-300 hover:shadow-2xl  hover:shadow-gray-600/10 dark:bg-gray-800">
+          <div className="cursor-pointer group relative bg-white transition hover:z-[1] hover:bg-orange-300 hover:shadow-2xl  hover:shadow-gray-600/10 dark:bg-gray-800">
             <div className="relative space-y-8 p-8 py-12">
               <Image
                 src={hippo}
@@ -104,7 +104,7 @@ const Solution: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="group relative bg-gray-50  transition hover:z-[1] hover:bg-gray-300 hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900">
+          <div className="group relative cursor-pointer bg-white transition hover:z-[1] hover:bg-gray-300 hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900">
             <div className="relative space-y-8 p-8 py-12 ">
               <Image
                 src={gif}
