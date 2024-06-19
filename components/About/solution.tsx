@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 // components/Solution.tsx
 
 import React from "react";
@@ -45,8 +46,8 @@ const Solution: React.FC = () => {
               <Image
                 src={stap}
                 alt="Burger illustration"
-                width={48}
-                height={48}
+                width="512"
+                height="512"
                 className="w-12"
               />
 
@@ -104,7 +105,7 @@ const Solution: React.FC = () => {
             </div>
           </div>
           <div className="group relative bg-gray-50  transition hover:z-[1] hover:bg-gray-300 hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900">
-            <div className="relative space-y-8 p-8 py-12 transition duration-300 hover:bg-red-300  group-hover:bg-white dark:group-hover:bg-gray-800">
+            <div className="relative space-y-8 p-8 py-12 ">
               <Image
                 src={gif}
                 className="w-12"

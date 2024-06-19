@@ -1,91 +1,86 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import Container from "../Hero/container";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Testimonial, TestimonialData } from "./testiType";
 
-const Testimonials: React.FC = () => {
+const Testi: Testimonial[] = TestimonialData;
+
+const Testimonials = () => {
+  var settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: 'Linear',
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    responsive: [
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
+  };
   return (
-    <div className="text-gray-600 dark:text-gray-300" id="testimonials">
-      <Container>
-        <div className="mb-20 space-y-4 px-6 md:px-0">
-          <h2 className="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
-            We have some fans.
-          </h2>
+    <div className="py-10">
+      <div className="container">
+        {/* Header Section */}
+        <div className="mx-auto mb-10 max-w-[600px] text-center">
+          <p data-aos="fade-up" className="text-sm text-primary">
+            What our customers are saying
+          </p>
+          <h1 data-aos="fade-up" className="text-3xl font-bold">
+            Testimonials
+          </h1>
+          <p data-aos="fade-up" className="text-xs text-gray-400">
+            Check this testimonials from our customers here
+          </p>
         </div>
-        <div className="gap-8 space-y-8 md:columns-2 lg:columns-3">
-          {testimonialsData.map((testimonial, index) => (
-            <div
-              key={index}
-              className="aspect-auto rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
-            >
-              <div className="flex gap-4">
-                <img
-                  className="size-12 rounded-full"
-                  src={testimonial.image}
-                  alt={`${testimonial.name} avatar`}
-                  width="400"
-                  height="400"
-                  loading="lazy"
-                />
-                <div>
-                  <h6 className="text-lg font-medium text-gray-700 dark:text-white">
-                    {testimonial.name}
-                  </h6>
-                  <p className="text-sm text-gray-500 dark:text-gray-300">
-                    {testimonial.position}
+        {/* Testimonials Card */}
+        <div
+        data-aos="zoom-in"
+        >
+          <Slider {...settings}>
+            {Testi.map((data) => (
+              <div key={data.id} className='my-6'>
+                <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
+                  <div className="mb-4">
+                    <img src={data.img} alt="" className="rounded-full w-20 h-20" />
+                  </div>
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="space-y-3">
+                      <p className="text-xs text-gray-500">{data.text}</p>
+                      <h1 className="text-xl font-bold text-black/80 dark:text-light ">{data.name}</h1>
+                    </div>
+                  </div>
+                  <p className='text-black/20 text-9xl font-serif absolute top-0 right-0'>
+                    ,,
                   </p>
                 </div>
               </div>
-              <p className="mt-8">{testimonial.message}</p>
-            </div>
-          ))}
+            ))}
+          </Slider>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
-
-const testimonialsData = [
-  {
-    name: "Daniella Doe",
-    position: "Mobile dev",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quo eum quae quos illo earum ipsa doloribus nostrum minus libero aspernatur laborum cum, a suscipit, ratione ea totam ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
-    image: "./images/avatars/avatar.webp",
-  },
-  {
-    name: "Jane Doe",
-    position: "Marketing",
-    message:
-      "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
-    image: "./images/avatars/avatar-1.webp",
-  },
-  {
-    name: "Yanick Doe",
-    position: "Developer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
-    image: "./images/avatars/avatar-2.webp",
-  },
-  {
-    name: "Jane Doe",
-    position: "Mobile dev",
-    message:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
-    image: "./images/avatars/avatar-3.webp",
-  },
-  {
-    name: "Andy Doe",
-    position: "Manager",
-    message:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
-    image: "./images/avatars/avatar-4.webp",
-  },
-  {
-    name: "Yanndy Doe",
-    position: "Mobile dev",
-    message:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
-    image: "./images/avatars/avatar-2.webp",
-  },
-];
 
 export default Testimonials;

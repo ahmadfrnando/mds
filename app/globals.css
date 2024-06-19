@@ -7,6 +7,9 @@
   --font-primary: "Inter", sans-serif; /* Nama font yang Anda install */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-primary);
 }

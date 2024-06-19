@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 import React from "react";
 import Container from "./Hero/container";
 import LogoImage from "../public/logo only.png";
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
               <Link href="#home" passHref>
                 {" "}
                 {/* Menggunakan Link untuk routing */}
-                <a aria-label="logo" className="flex items-center space-x-2">
+                <div aria-label="logo" className="flex items-center space-x-2">
                   <div aria-hidden="true" className="flex space-x-1">
                     <div className="size-8 rounded-full bg-transparent dark:bg-white">
                       <Image src={LogoImage} alt="Logo" className="size-8" />
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
                   <span className="text-xl font-bold text-gray-700 dark:text-white md:text-6xl xl:text-xl">
                     Medan Digital Solution
                   </span>
-                </a>
+                </div>
               </Link>
 
               <div className="relative flex max-h-10 items-center lg:hidden">
@@ -120,69 +120,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-=======
-"use client";
-import Image from "next/image";
-import { Navbar } from "flowbite-react";
-import { DarkThemeToggle } from "flowbite-react";
-import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
-
-const nav = [
-  {
-    title: "Home",
-    link: "/",
-  },
-  {
-    title: "About",
-    link: "/about",
-  },
-  {
-    title: "Services",
-    link: "/services",
-  },
-  {
-    title: "Contact",
-    link: "/contact",
-  },
-];
-export default function NavbarWrapper() {
-  const router = useRouter();
-  const pathname = usePathname();
-  return (
-    <nav className="px-16">
-      <Navbar fluid rounded className=" w-full items-center justify-between">
-        <Navbar.Brand href="https://flowbite-react.com">
-          <Image
-            src="/logo only.png"
-            className="mr-3 h-6 sm:h-9"
-            width={37}
-            height={50}
-            alt="Flowbite React Logo"
-          />
-          <span className="text-hitamterang self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Medan Digital Solutions
-          </span>
-        </Navbar.Brand>
-        <div className="flex md:order-2">
-          <DarkThemeToggle />
-          <Navbar.Toggle />
-        </div>
-        <Navbar.Collapse className="text-hitamterang">
-          {nav.map((item) => (
-            <Navbar.Link
-              key={item.title}
-              as={Link}
-              prefetch={false}
-              className={`${pathname === item.link ? 'text-merahlangit' : ''} hover:text-merahlangit`}
-              href={item.link}
-            >
-              {item.title}
-            </Navbar.Link>
-          ))}
-        </Navbar.Collapse>
-      </Navbar>
-    </nav>
-  );
-}
->>>>>>> Stashed changes
