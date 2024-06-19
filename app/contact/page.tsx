@@ -1,9 +1,9 @@
-import ContactContent from "@/components/Contact/contact";
+import ContactContent from "@/components/Contact/call";
 import Layout from "@/components/Layout";
 export default function Contact() {
-    return (
-        <Layout>
-        <ContactContent />
-        </Layout>
-    );
+  return (
+    <Layout>
+      <ContactContent />
+    </Layout>
+  );
 }
