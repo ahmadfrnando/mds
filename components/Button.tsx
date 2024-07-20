@@ -1,9 +1,16 @@
 /* eslint-disable tailwindcss/no-custom-classname */
+interface ButtonCustomProps {
+  className?: string;
+  title: string;
+  type?: "button" | "submit" | "reset";
+  onClick?: () => void; // Tambahkan prop onClick
+}
+
 export default function ButtonCustom({
   className = "bg-primary ring-primary",
   title,
-  type,
-}: any) {
+  type = "button",
+}: ButtonCustomProps) {
   return (
     <button
       type={type}
