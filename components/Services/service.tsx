@@ -1,19 +1,13 @@
-
 import React from "react";
 import { Card } from "flowbite-react";
 import ButtonCustom from "../Button";
 import Container from "../Hero/container";
 import { Layanan, LayananData } from "./serviceType";
+import Link from "next/link";
 
 const services: Layanan[] = LayananData;
 
 const ServiceContent = () => {
-  const handleWhatsAppClick = () => {
-    const phoneNumber = "6285761088663";
-    const message = "Hello, saya ingin konsultasi untuk pembuatan.";
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  };
   return (
     <section
       id="service"
@@ -75,12 +69,12 @@ const ServiceContent = () => {
                     </li>
                   ))}
                 </ul>
-                <ButtonCustom
-                  type="button"
-                  title="Pesan Sekarang"
-                  className="bg-blue-400 ring-blue-400"
-                  onClick={handleWhatsAppClick}
-                />
+                <Link href="https://wa.me/6282166622870?text=saya ingin konsultasi untuk pembuatan website" target="_blank">
+                  <ButtonCustom
+                    title="Pesan Sekarang"
+                    className="bg-blue-400 ring-blue-400"
+                  />
+                </Link>
               </Card>
             </div>
           ))}
