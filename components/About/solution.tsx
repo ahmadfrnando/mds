@@ -29,7 +29,7 @@ const Solution: React.FC = () => {
 
           <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
             Keuntungan Menggunakan Layanan
-            <span className="text-primary dark:text-white"> MDS.</span>
+            <span className="text-primary dark:text-white"> Borong Web.</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-300">
             Karena Website bukan hanya soal bagus atau tidaknya, Tapi bagaimana
@@ -77,7 +77,7 @@ const Solution: React.FC = () => {
                   Harga Bisa Request
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Suka sama Mds tapi Harga belum cocok ? Santai. Kamu bisa
+                  Suka sama Borong Web tapi Harga belum cocok ? Santai. Kamu bisa
                   tentukan harga websitemu sendiri
                 </p>
               </div>
@@ -98,7 +98,7 @@ const Solution: React.FC = () => {
                   Layanan All In One
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Tak hanya Website, Mds juga bisa membuatkan kamu Design
+                  Tak hanya Website, Borong Web juga bisa membuatkan kamu Design
                   Promosi & Skalian Iklan di Google
                 </p>
               </div>
@@ -119,7 +119,7 @@ const Solution: React.FC = () => {
                   Banyak Bonus Gratis
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Disetiap Paket Website. Mds akan memberikan Bonus yang sangat
+                  Disetiap Paket Website. Borong Web akan memberikan Bonus yang sangat
                   berguna buat bisnismu
                 </p>
               </div>

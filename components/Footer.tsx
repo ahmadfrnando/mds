@@ -112,11 +112,11 @@ const Footer: React.FC = () => {
             <div className="m-auto mt-16 w-10/12 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left">
               <span className="block  text-gray-500 dark:text-gray-400">
                 Kenyaman anda adalah prioritas kami, kembangkan bisnis anda ke
-                dunia digital bersama MDS
+                dunia digital bersama Borong Web
               </span>
 
               <span className="block text-gray-500 dark:text-gray-400">
-                Medan Digital Solution &copy; <span id="year"></span>
+                Borong Web &copy; <span id="year"></span>
               </span>
 
               <span className="flex justify-between text-gray-600 dark:text-white">

@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const portfolio: Layanan[] = portfolioType;
 
-const Blog: React.FC = () => {
+const PortfolioContent = () => {
   return (
-    <div id="blog" className="mt-36">
+    <div className="mt-36">
       <Container>
         <div className="mb-12 space-y-2 text-center">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">
@@ -20,7 +20,7 @@ const Blog: React.FC = () => {
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {portfolioType.map((post, index) => (
+          {portfolio.map((post, index) => (
             <div
               key={index}
               className="group rounded-3xl border border-gray-100 bg-white bg-opacity-50 p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-8"
@@ -42,10 +42,11 @@ const Blog: React.FC = () => {
                 <p className="mb-8 mt-6 text-sm text-gray-600 dark:text-gray-300">
                   {post.excerpt}
                 </p>
-                <Link href="#">
-                  <h1 className="text-info inline-block dark:text-blue-300">
-                    Read more
-                  </h1>
+                <Link
+                  href={post.link}
+                  className="text-info inline-block cursor-pointer dark:text-blue-300"
+                >
+                  See more
                 </Link>
               </div>
             </div>
@@ -56,4 +57,4 @@ const Blog: React.FC = () => {
   );
 };
 
-export default Blog;
+export default PortfolioContent;
