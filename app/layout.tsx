@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://medanmds.web.app"),
-  keywords: ["jasa website medan", "jasa website murah", "jasa website company profile", "jasa website toko online","mds","medan digital solution", "jasa website e commerce"],
-  title: "Medan Digital Solution",
+  keywords: ["jasa website medan", "jasa website murah", "jasa website company profile", "jasa website toko online","borong web", "jasa website e commerce"],
+  title: "Borong Web",
   description: "Jasa website medan",
 };
 

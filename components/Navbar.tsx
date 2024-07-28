@@ -1,7 +1,7 @@
 
 import React from "react";
 import Container from "./Hero/container";
-import LogoImage from "../public/logo only.png";
+import LogoImage from "../public/logo_tunggal.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,8 +29,8 @@ const Header: React.FC = () => {
                       <Image src={LogoImage} alt="Logo" className="size-8" />
                     </div>
                   </div>
-                  <span className="text-xl font-bold text-gray-700 dark:text-white md:text-6xl xl:text-xl">
-                    Medan Digital Solution
+                  <span className="text-xl text-gray-700 dark:text-white md:text-6xl xl:text-xl">
+                    BorongWeb
                   </span>
                 </div>
               </Link>
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/portfolio" passHref>
+                    <Link href="/portfolios" passHref>
                       <h1 className="relative block transition hover:text-primary md:px-4">
                         <span>Portfolio</span>
                       </h1>

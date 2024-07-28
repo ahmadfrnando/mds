@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Container from "./container";
 import nando from "./images/nando.png";
-import tway from "./images/poto2.jpg";
-import jogon from "./images/jogon.png";
+import tway from "./images/tway.png";
+import jogon from "./images/bagus.png";
 import johan from "./images/johan.png";
-import mds from "./images/logo only.png";
+import BW from "./images/logo_tunggal.svg";
 import Link from "next/link";
 
 const ExampleComponent = () => {
@@ -41,7 +41,7 @@ const ExampleComponent = () => {
               loading="lazy"
               width="200"
               height="200"
-              src={mds}
+              src={BW}
               alt="member photo"
               className="z-10 size-16 rounded-full object-cover"
             />
@@ -67,7 +67,7 @@ const ExampleComponent = () => {
               Konsultasi Gratis Sekarang
             </h1>
             <p className="text-center  text-gray-600 dark:text-gray-300">
-              Mds Team siap mewujudkan Website impian kamu. Klik salah satu CS,
+              Borong Web Team siap mewujudkan Website impian kamu. Klik salah satu CS,
               Terserah yang mana, Sama sama Ramah kok
             </p>
             <div className="flex flex-wrap justify-center gap-6">

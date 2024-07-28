@@ -44,7 +44,7 @@ const Solution: React.FC = () => {
               className="my-8 text-gray-600 dark:text-gray-300"
               data-aos="zoom-in-up"
             >
-              Medan Digital Solutions merupakan sebuah perusahaan yang bergerak
+              Borong Web merupakan sebuah perusahaan yang bergerak
               di bidang digital. Kami berdedikasi untuk memberikan pelayanan
               terbaik dan terpercaya. <br /> <br /> Kami mengedepankan kualitas
               dan kepuasan pelanggan dengan tim yang profesional dan

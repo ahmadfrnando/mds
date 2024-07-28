@@ -10,7 +10,7 @@ export const TestimonialData: Testimonial[] = [
     id: 1,
     name: "Sarah A.",
     text:
-      "Menggunakan jasa pembuatan website dari MDS sangat memuaskan! Website yang dibuat sangat berkualitas dan pengerjaannya sangat cepat. Saya pasti akan kembali menggunakan jasa ini. Terima kasih!",
+      "Menggunakan jasa pembuatan website dari Borong Web sangat memuaskan! Website yang dibuat sangat berkualitas dan pengerjaannya sangat cepat. Saya pasti akan kembali menggunakan jasa ini. Terima kasih!",
     img: "https://picsum.photos/101/101",
   },
   {
@@ -23,27 +23,27 @@ export const TestimonialData: Testimonial[] = [
     id: 3,
     name: "Mira Khusnul",
     text:
-      "Website yang dibuat oleh MDS persis seperti yang diharapkan. Kualitasnya luar biasa dan harganya sangat terjangkau. Saya merekomendasikan jasa ini kepada semua teman saya!",
+      "Website yang dibuat oleh Borong Web persis seperti yang diharapkan. Kualitasnya luar biasa dan harganya sangat terjangkau. Saya merekomendasikan jasa ini kepada semua teman saya!",
     img: "https://picsum.photos/103/103",
   },
   {
     id: 4,
     name: "Rizky",
     text:
-      "Pengerjaan super cepat dan hasilnya datang dalam kondisi sempurna. Sungguh pengalaman bekerja sama yang luar biasa. Terima kasih, MDS",
+      "Pengerjaan super cepat dan hasilnya datang dalam kondisi sempurna. Sungguh pengalaman bekerja sama yang luar biasa. Terima kasih, Borong Web",
     img: "https://picsum.photos/104/104",
   },
   {
     id: 5,
     name: "Dewi",
     text:
-      "Ini pertama kalinya saya menggunakan jasa pembuatan website dari MDS dan saya sangat puas. Proses pemesanan sangat mudah dan saya mendapatkan hasil dalam waktu singkat. Pasti akan menggunakan jasa ini lagi!",
+      "Ini pertama kalinya saya menggunakan jasa pembuatan website dari Borong Web dan saya sangat puas. Proses pemesanan sangat mudah dan saya mendapatkan hasil dalam waktu singkat. Pasti akan menggunakan jasa ini lagi!",
     img: "https://picsum.photos/105/105",
   },
   {
     id: 6,
     name: "Andi",
-    text: "Saya suka menggunakan jasa MDS karena koleksi desainnya lengkap dan selalu up-to-date. Harga yang ditawarkan juga kompetitif dan sering ada promo menarik. Luar biasa!",
+    text: "Saya suka menggunakan jasa Borong Web karena koleksi desainnya lengkap dan selalu up-to-date. Harga yang ditawarkan juga kompetitif dan sering ada promo menarik. Luar biasa!",
     img: "https://picsum.photos/106/106",
   },
   {
