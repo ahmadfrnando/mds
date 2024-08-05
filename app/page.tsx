@@ -1,4 +1,3 @@
-
 import HeroContent from "@/components/Hero/hero";
 import AboutContent from "@/components/About/about";
 import SolutionContent from "@/components/About/solution";
@@ -20,4 +19,3 @@ export default function Home() {
     </Layout>
   );
 }
-

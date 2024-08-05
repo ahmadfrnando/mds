@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @next/next/no-img-element */
 // eslint-disable-next-line no-unused-vars
-'use client';
+"use client";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -20,7 +20,7 @@ const Testimonials = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    cssEase: 'Linear',
+    cssEase: "Linear",
     pauseOnHover: true,
     pauseOnFocus: true,
     responsive: [
@@ -35,7 +35,7 @@ const Testimonials = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -43,39 +43,44 @@ const Testimonials = () => {
     ],
   };
   return (
-    <div className="py-10 ">
-      <div className="md:px-52 max-h-md ">
+    <div className="mt-14 py-10">
+      <div className="max-h-md md:px-52 ">
         {/* Header Section */}
-        <div className="mx-auto mb-10 gap-4 flex flex-col max-w-[600px] text-center ">
-          <p data-aos="fade-up" className="text-sm text-primary">
-            What our customers are saying
-          </p>
-          <h1 data-aos="fade-up" className="md:text-5xl text-4xl font-bold">
-            Testimonials
-          </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-            Check this testimonials from our customers here
+        <div className="mb-12 space-y-2 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">
+            Testimoni
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-6/12">
+            Berikut ini adalah beberapa testimoni dari pelanggan kami yang telah
+            merasakan gimana pelayanan kami
           </p>
         </div>
+
         {/* Testimonials Card */}
-        <div
-        data-aos="zoom-in"
-        className="flex flex-col"
-        >
+        <div data-aos="zoom-in" className="flex flex-col">
           <Slider {...settings}>
             {Testi.map((data) => (
-              <div key={data.id} className='my-6'>
-                <div className="relative mx-4 flex flex-col gap-4 rounded-xl bg-primary/10 px-6 py-8 shadow-lg dark:bg-gray-800">
+              <div key={data.id} className="my-6">
+                <div className="relative mx-4 flex h-1/2 flex-col gap-4 rounded-xl border border-blue-200 px-6 py-8 shadow-lg dark:bg-gray-800">
                   <div className="mb-4">
-                    <Image src={data.img} alt="" loading="lazy" width={100} height={100} className="size-20 rounded-full" />
+                    <Image
+                      src={data.img}
+                      alt=""
+                      loading="lazy"
+                      width={100}
+                      height={100}
+                      className="size-20 rounded-full"
+                    />
                   </div>
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
                       <p className="text-xs text-gray-500">{data.text}</p>
-                      <h1 className="dark:text-light text-xl font-bold text-black/80 ">{data.name}</h1>
+                      <h1 className="dark:text-light text-xl font-bold text-black/80 ">
+                        {data.name}
+                      </h1>
                     </div>
                   </div>
-                  <p className='absolute right-0 top-0 font-serif text-9xl text-black/20'>
+                  <p className="absolute right-0 top-0 font-serif text-9xl text-black/20">
                     ,,
                   </p>
                 </div>

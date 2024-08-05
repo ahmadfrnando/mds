@@ -1,4 +1,3 @@
-
 import React from "react";
 import Container from "./Hero/container";
 import LogoImage from "../public/logo_tunggal.svg";
@@ -25,11 +24,15 @@ const Header: React.FC = () => {
                 {/* Menggunakan Link untuk routing */}
                 <div aria-label="logo" className="flex items-center space-x-2">
                   <div aria-hidden="true" className="flex space-x-1">
-                    <div className="size-8 rounded-full bg-transparent dark:bg-white">
-                      <Image src={LogoImage} alt="Logo" className="size-8" />
+                    <div className="size-8 bg-transparent dark:bg-white">
+                      <Image
+                        src={LogoImage}
+                        alt="Logo"
+                        className="size-auto rounded-full"
+                      />
                     </div>
                   </div>
-                  <span className="text-xl text-gray-700 dark:text-white md:text-6xl xl:text-xl">
+                  <span className="text-xl font-semibold text-gray-700 dark:text-white md:text-6xl xl:text-xl">
                     BorongWeb
                   </span>
                 </div>
@@ -68,13 +71,13 @@ const Header: React.FC = () => {
                       </h1>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="#solution" passHref>
+                  {/* <li>
+                    <Link href="#about" passHref>
                       <h1 className="block transition hover:text-primary md:px-4">
                         <span>About</span>
                       </h1>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/services" passHref>
                       <h1 className="block transition hover:text-primary md:px-4">
@@ -82,17 +85,24 @@ const Header: React.FC = () => {
                       </h1>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#contact" passHref>
                       <h1 className="block transition hover:text-primary md:px-4">
                         <span>Contact</span>
                       </h1>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/portfolios" passHref>
                       <h1 className="relative block transition hover:text-primary md:px-4">
                         <span>Portfolio</span>
+                      </h1>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog" passHref>
+                      <h1 className="relative block transition hover:text-primary md:px-4">
+                        <span>Blog</span>
                       </h1>
                     </Link>
                   </li>

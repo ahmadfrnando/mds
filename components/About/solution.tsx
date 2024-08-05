@@ -11,7 +11,7 @@ import stap from "./images/shoe-prints-solid.svg";
 
 const Solution: React.FC = () => {
   return (
-    <div id="features">
+    <div id="about">
       <Container>
         <div className="mt-12 md:w-2/3 lg:w-1/2">
           <svg
